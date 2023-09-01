@@ -1,3 +1,265 @@
-.bg-pink {
-    background-color: pink;
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+
+
+#home {
+    position: relative;
+}
+.home-image {
+    width: 100%;
+    -webkit-filter: brightness(20%);
+}
+.home-text {
+    position: absolute;
+    top: 40%;
+    left: 34%;
+    text-align: center;
+    color: aquamarine;
+}
+
+/* gaya bag about */
+#about {
+    padding: 50px;
+    color: aquamarine;
+    text-align: center;
+}
+.bg-abt {
+    background-color: rgb(4, 4, 31);
+}
+#about h1 {
+    margin-bottom: 10px;
+    font-family: 'Pushster', cursive;
+}
+#about p {
+    font-size: 18px; 
+    line-height: 1.6; 
+    margin: 0 auto; 
+    max-width: 800px; 
+    text-align: justify; 
+    padding: 20px; 
+}
+
+/* gaya bag experiences */
+#experiences {
+    color: aquamarine;
+    padding: 50px;
+    background-color: rgb(27, 2, 2);
+    text-align: center;
+}
+#experiences h1 {
+    font-family: 'Pushster', cursive;
+    padding: 20px;
+}
+.experiences-container {
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    column-gap: 15px;
+}
+
+.experiences-card {
+    flex: 1; 
+    background-color: #860000; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    padding: 20px; 
+    text-align: center;
+    transition: transform 0.2s; 
+}
+
+.experiences-card:hover {
+    transform: scale(1.05); 
+}
+
+.experiences-card h2 {
+    font-size: 24px; 
+    margin: 10px 0; 
+}
+
+.experiences-card h3 {
+    font-size: 18px; 
+    color: #777; 
+}
+
+/* gaya bag education */
+#education {
+    color: aquamarine;
+    padding: 50px;
+    background-color: rgb(2, 27, 12);
+    text-align: center;
+}
+
+#education h1 {
+    font-family: 'Pushster', cursive;
+    padding: 20px;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.education-card {
+    background-color: #031b15;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+}
+
+.education-card h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.education-card p {
+    font-size: 18px;
+    color: #777;
+    margin: 5px 0;
+}
+
+/* Gaya bag Skills */
+
+#skills {
+    color: aquamarine;
+    padding: 50px;
+    background-color: rgb(3, 58, 25);
+    text-align: center;
+}
+#skills h1 {
+    font-family: 'Pushster', cursive;
+    padding: 20px;
+}
+#skills h3 {
+    color: #031b15;
+}
+#skills p {
+    color: #777;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: left;
+}
+
+.skill {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1; 
+    min-width: 250px;
+    transition: transform 0.2s;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+.skill h3 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.skill ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skill ul li {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+/* Gaya bag Interest */
+#interest {
+    background-color: #70ce9a;
+    padding: 50px;
+    text-align: justify;
+}
+
+.interest-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#interest h1 {
+    font-family: 'Pushster', cursive;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+li {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* bagian Award */
+#award {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.award-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#award h1 {
+    font-family: 'Pushster', cursive;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.award {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+.award:hover {
+    transform: scale(1.05);
+}
+
+.award h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.award p {
+    font-size: 18px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Pushster', cursive;
 }
